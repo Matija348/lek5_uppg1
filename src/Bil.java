@@ -1,4 +1,4 @@
-public class App {
+public class Bil {
     // Del 1 – privata variabler (inkapsling)
     private String registreringsnummer;
     private String märke;
@@ -7,7 +7,7 @@ public class App {
     private int hastighet;
 
     // Del 2 – Konstruktor
-    public App(String registreringsnummer, String märke, String modell, int årsmodell) {
+    public Bil(String registreringsnummer, String märke, String modell, int årsmodell) {
         if (registreringsnummer == null || registreringsnummer.isEmpty())
             throw new IllegalArgumentException("Registreringsnummer får inte vara tomt.");
         if (märke == null || märke.isEmpty())

@@ -1,7 +1,7 @@
 public class main {
     public static void main(String[] args) {
         // Skapa en bil med giltiga värden
-        App bil1 = new App("ABC123", "Volvo", "245 GL", 1983);
+        Bil bil1 = new Bil("ABC123", "Volvo", "245 GL", 1983);
         System.out.println(bil1);
 
         // Öka hastigheten
@@ -21,7 +21,7 @@ public class main {
 
         // Testa skapa bil med ogiltiga värden → exception
         try {
-            App bil2 = new App("", "Volvo", "245 GL", 0);
+            Bil bil2 = new Bil("", "Volvo", "245 GL", 0);
         } catch (IllegalArgumentException e) {
             System.out.println("Fel när bil2 skapades: " + e.getMessage());
         }
